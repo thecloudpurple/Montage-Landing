@@ -319,7 +319,6 @@ body {
 @media (max-width: 768px) {
     .features-inner {
         margin: 10px;
-        /* Уменьшаем отступы от верхней и нижней части рамки */
         padding: 15px 20px;
         border-radius: 35px;
     }
@@ -328,7 +327,6 @@ body {
         flex-direction: column;
         align-items: center !important;
         text-align: center;
-        /* Уменьшаем отступ между изображением и заголовком */
         gap: 5px;
     }
     
@@ -347,7 +345,6 @@ body {
     
     .features-text {
         margin-left: 0 !important;
-        /* Центрируем текст */
         text-align: center;
         padding: 0 20px;
     }
@@ -461,6 +458,12 @@ body {
     .feature-item i {
         font-size: 18px;
     }
+
+    /* Сброс переноса для мобильных */
+    .break-desktop {
+        display: inline !important;
+        margin: 0 !important;
+    }
 }
 
 /* Десктопная версия */
@@ -486,5 +489,12 @@ body {
     
     .screenshot:last-child .btn-primary {
         display: none;
+    }
+
+    /* Ключевые изменения для переноса */
+    .break-desktop {
+        display: block;
+        margin-top: 0.5em;
+        text-align: center;
     }
 }
